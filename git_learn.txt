@@ -32,4 +32,7 @@ my github account is :dymuye dymuye123
 		    -r 向下递归，不管多少级目录一并删除
 		    -f 直接强行删除
 
+-- 创建并切换到分支 ：$ git checkout -b branchname
+-- 查看当前分支(会列出所有分支，当前分支前会有*) ：$ git branch
+
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000
