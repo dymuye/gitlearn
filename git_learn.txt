@@ -1,3 +1,4 @@
+my github account is :dymuye dymuye123
 （如果使用Windows系统，请确保目录名（包括父目录）不包含中文。）
 
 -- 创建文件夹 ：$ mkdir learngit
@@ -6,20 +7,23 @@
 -- 将目录变成git可管理的仓库 ：$ git init
 -- 查看当前目录下所有文件,包括隐藏文件 ： $ ls -ah
 -- 查看当前目录下所有文件,包括隐藏文件 ： $ ll -a
--- 添加文件到git仓库 ：$ git add file
+-- add file to git responsity ：$ git add file
 		       $ git add file1 file2 file3 ..
 		       $ git commit -m "xxxx"    添加多个文件，一次提交。
--- 对修改进行提交,(-m "XXX" 是注释) ：$ git commit -m "wrote a readme file"
--- 查看仓库当前状态 ：$ git status
--- 查看不同 ：$ git diff file
--- 查看日志 ：$ git log
+-- commit the modifies with a notes ：$ git commit -m "wrote a readme file"
+-- show status of the responsity ：$ git status
+-- show difference ：$ git diff file
+-- show log ：$ git log
 	      $ git log --pretty=oneline
 -- 版本回退,回退到上一个版本标记 ：$ git reset --hard HEAD^
 	    回退到指定版本 ：$ git reset --hard 版本号
--- 显示文件 ：$ git file
+-- show file ：$ cat file
+-- give up the modifies on workspace (to the latest git add or git commit) ：$ git checkout -- file 
+-- delete file in git responsity : $ git rm file
 
-
-
+-- 关联一个远程仓库 ：$ git remote add origin git@server-name:path/repo-name.git;
+-- 第一次推送master分支的所有内容 ：$ git push -u origin master
+-- 普通提交 ：$ git push origin master
 
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743256916071d599b3aed534aaab22a0db6c4e07fd0000
 
