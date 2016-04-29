@@ -5,3 +5,5 @@ Creating a new branch is quick. good job!
 Git is a powerful tool for us!
 
 Git use strategic!
+I like it!
+
