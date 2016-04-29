@@ -59,5 +59,17 @@ my github account is :dymuye dymuye123
 		$ git stash drop  [删除stash内容]
 -- 恢复工作区 ：$ git stash pop [恢复的同时删除stash内容]
 	
+-- 创建标签 ：$ git tag v1.0
+-- 在指定提交上创建标签 ：$ git tag v0.9 6224937[提交编号]
+-- 查看标签 ：$ git tag
+-- 查看标签信息 ：$ git show v1.0
+-- 用私钥签名标签 ：$ git tag -s v1.0 -m "signed version 1.0 released" fec145a
+   签名采用PGP签名，因此，必须首先安装gpg（GnuPG），如果没有找到gpg，
+   或者没有gpg密钥对，就会报错
+-- 删除标签 ：$ git tag -d v1.0
+-- 推送指定标签到远程 ：$ git push origin v1.0
+-- 推送所有未推送的标签 ：$ git push origin --tags
+-- 删除远程标签 ：$ git push origin:refs/tags/v1.0
+
 
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000
