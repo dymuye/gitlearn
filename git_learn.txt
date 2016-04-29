@@ -18,7 +18,8 @@ my github account is :dymuye dymuye123
 -- 版本回退,回退到上一个版本标记 ：$ git reset --hard HEAD^
 	    回退到指定版本 ：$ git reset --hard 版本号
 -- show file ：$ cat file
--- give up the modifies on workspace (to the latest git add or git commit) ：$ git checkout -- file 
+-- give up the modifies on workspace (to the latest git add or git commit) ：
+	$ git checkout -- file 
 -- delete file in git responsity : $ git rm file
 
 -- 关联一个远程仓库 ：$ git remote add origin git@server-name:path/repo-name.git;
@@ -26,6 +27,13 @@ my github account is :dymuye dymuye123
 -- 普通提交 ：$ git push origin master
 
 -- 从远程地址克隆库 ：$ git clone git@server-name:path/repo-name.git;
+-- 查看远程库信息 ：$ git remote -v
+-- 从远程库抓取最新更新 ：$ git pull [完成后需要解决冲突]
+-- 本地创建和远程分支对应的分支 ：
+	$ git checkout -b branch-name origin/branch-name
+-- 建立本地分支与远程分支的关联 ：
+	$ git branch --set-upstream branch-name origin/branch-name
+
 -- 删除文件 ：rm file
 -- 删除文件夹 ：rmdir dirc
 -- 删除非空文件夹 ：rm -rf dirc
